@@ -58,6 +58,7 @@ public class TodoResource {
     @DELETE
     @Transactional
     public Response deleteCompleted() {
+        //comment out the line below for live coding demo.
         Todo.deleteCompleted();
         return Response.noContent().build();
     }
